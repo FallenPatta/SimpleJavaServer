@@ -1,0 +1,56 @@
+	
+//  public static void sendEmail(String to)
+//  {
+//  	new Thread(new Runnable(){
+//  		public void run(){
+//  		
+//	        final String username = "david.bohlig@gmx.de";
+//	        final String password = "Myranor1411";
+////	        final String username = "d-b-01@live.de";
+////	        final String password = "seat060key";
+//	
+//	        Properties props = new Properties();
+//	        props.put("mail.smtp.auth", "true");
+//	        props.put("mail.smtp.starttls.enable", "true");
+//	        //props.put("mail.smtp.host", "smtp-mail.outlook.com");
+//	        //mail.gmx.com
+//	        props.put("mail.smtp.host", "mail.gmx.com");
+//	        props.put("mail.smtp.port", "587");
+//	
+//	        Session session = Session.getInstance(props,
+//	          new javax.mail.Authenticator() {
+//	            protected PasswordAuthentication getPasswordAuthentication() {
+//	                return new PasswordAuthentication(username, password);
+//	            }
+//	          });
+//	
+//	        try {
+//	        	
+////	        	MessageDigest messageDigest = MessageDigest.getInstance("SHA-256");
+////	        	messageDigest.update(Integer.toString(new Random().nextInt()).getBytes());
+////	        	String encryptedString = new String(messageDigest.digest());
+//	        	String auth = "";
+//	        	for(int i = 0; i<5; i++) auth = auth + new Random().nextInt(10);
+//	
+//	            Message message = new MimeMessage(session);
+//	            message.setFrom(new InternetAddress("david.bohlig@gmx.de"));
+//	            message.setRecipients(Message.RecipientType.TO,
+//	                InternetAddress.parse("david.bohlig@gmx.de")); //to
+//	            message.setSubject("Server - auth Mail - bestimmt fuer Serverauthentifikation");
+//	            message.setText("Authentifizierungscode:\n\n"
+//	                + auth);
+//	
+//	            Transport.send(message);
+//	
+//	            System.out.println("Done");
+//	
+//	        } 
+//	
+//	        catch (MessagingException e) 
+//	        {
+//	            // throw new RuntimeException(e);
+//	            System.out.println("Username or Password are incorrect ... exiting !");
+//	        }
+//  		}
+//  	}).start();
+//  }s
