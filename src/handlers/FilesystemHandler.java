@@ -332,7 +332,7 @@ public class FilesystemHandler implements HttpHandler {
 		this.servType = "http";
 		this.authDB = database;
 		System.out.println(servType);
-		hookUpFilesystem();
+		//hookUpFilesystem();
 	}
 	
 	public FilesystemHandler(Filesystem f, String remoteIP, HttpsServer server, String database){
@@ -342,7 +342,7 @@ public class FilesystemHandler implements HttpHandler {
 		this.servType = "https";
 		this.authDB = database;
 		System.out.println(servType);
-		hookUpFilesystem();
+		//hookUpFilesystem();
 	}
 
 }
